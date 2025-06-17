@@ -3,7 +3,7 @@
 This is a computer vision project that detects whether a person is **washing hands** or **not washing hands** using a custom Convolutional Neural Network (CNN). It works on both **images** and **video files**, providing real-time predictions and confidence scores.
 
 ---
-![Handwash Detection Demo](/output/OUTPUT.mp4)
+![Handwash Detection Demo](/output/output.gif.gif)
 
 
 ## 📌 Features
