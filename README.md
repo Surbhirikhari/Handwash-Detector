@@ -1,2 +1,34 @@
-# Handwash-Detector
-This project is a real-time Handwash Detection System that classifies actions as "Washing Hands" or "Not Washing Hands" using a custom-trained Convolutional Neural Network (CNN) in PyTorch. The system processes both images and videos and provides visual feedback with confidence levels.
+# 🧼 Handwash Detection using CNN (PyTorch + OpenCV)
+
+This is a computer vision project that detects whether a person is **washing hands** or **not washing hands** using a custom Convolutional Neural Network (CNN). It works on both **images** and **video files**, providing real-time predictions and confidence scores.
+
+---
+ffmpeg -i OUTPUT.mp4 -vf "fps=10,scale=640:-1:flags=lanczos" output.gif
+![Handwash Detection Demo](./media/demo.gif)
+
+
+## 📌 Features
+
+- ✅ Classifies frames as **"Washing Hands"** or **"Not Washing Hands"**
+- 📹 Works with **video files** and **static images**
+- 🧠 Built with **PyTorch** and **OpenCV**
+- 📊 Displays prediction with **confidence percentage**
+- 💾 Automatically trains if no saved model is found
+
+---
+
+## 🛠️ Technologies Used
+
+- Python  
+- PyTorch  
+- OpenCV  
+- Pillow (PIL)  
+- Torchvision Transforms  
+
+---
+
+## 🎯 Model Details
+A simple CNN model trained with Binary Cross Entropy Loss:
+- 3 convolutional layers with ReLU + MaxPooling
+- Fully connected layers with sigmoid output
+- Threshold: 0.6 for classifying as Washing Hands
