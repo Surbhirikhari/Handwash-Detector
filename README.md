@@ -4,7 +4,7 @@ This is a computer vision project that detects whether a person is **washing han
 
 ---
 ffmpeg -i OUTPUT.mp4 -vf "fps=10,scale=640:-1:flags=lanczos" output.gif
-![Handwash Detection Demo](./media/demo.gif)
+![Handwash Detection Demo](/output/OUTPUT.gif)
 
 
 ## 📌 Features
